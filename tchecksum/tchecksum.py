@@ -1,13 +1,19 @@
 from sys import version_info
 
 class CheckSum:
-	def __init__(self, type, code, id1, id2, seq1,seq2, data):
+	def __init__(self, icmp_type, icmp_code, icmp_id1, icmp_id2, icmp_seq1, icmp_seq2, data):
+	# Check data Bytes Type [dataがバイト型か確認]
+		if type(data) != bytes:
+			data = data.encode('UTF-8')
+
 	# Add type, code, id, seq [type, code, id, seqを追加]
-		self.checksum_list = [type, code, id1, id2, seq1,seq2]
+		self.checksum_list = [icmp_type, icmp_code, icmp_id1, icmp_id2, icmp_seq1, icmp_seq2]
+	
 	# Add ByteData [Byte_Dataを追加]
 		self.checksum_list.extend(data)
 		self.checksum_10 = 0
-	
+
+
 	def t_checksum(self):
 	# Python Version Check [Pythonバージョン確認]
 		if version_info.major > 2:
