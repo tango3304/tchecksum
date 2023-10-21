@@ -4,5 +4,5 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tchecksum"
-version = "2023.10.22"
+version = "1.0.0"
 description = "CheckSum Calculation Module"
