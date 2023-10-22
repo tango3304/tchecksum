@@ -27,7 +27,7 @@ class CheckSum:
 
 	# Get 16bit [16ビットを取得(ex.1101011001010100010 and 1111111111111111 = 1011001010100010)]
 	# ShiftRight 16bit Get 17bit or more [右に16ビット移動し、17ビット以上を取得(ex.1101011001010100010 and 1111111111111111 = 0000000000000110)]
-	# ReturnValue Hexadecimal [戻り値を16進数]
+	# ReturnValue binary [戻り値を2進数]
 		self.checksum_10 = (self.checksum_10 & 0xffff) + (self.checksum_10 >> 16)
 		checksum = self.checksum_10 ^ 0xffff
-		return hex(checksum)
+		return checksum
