@@ -6,10 +6,10 @@ class CheckSum:
 		if type(data) != bytes:
 			data = data.encode('UTF-8')
 
-	# Add type, code, id, seq [type, code, id, seqを追加]
+	# Add List icmp_type, icmp_code, icmp_id1, icmp_id2, icmp_seq1, icmp_seq2 [icmp_type, icmp_code, icmp_id1, icmp_id2, icmp_seq1, icmp_seq2 をリスト追加]
 		self.checksum_list = [icmp_type, icmp_code, icmp_id1, icmp_id2, icmp_seq1, icmp_seq2]
 	
-	# Add ByteData [Byte_Dataを追加]
+	# Add data [dataを追加]
 		self.checksum_list.extend(data)
 		self.checksum_10 = 0
 
