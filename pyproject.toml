@@ -1,3 +1,8 @@
 [build-system]
-requires = ["wheel", "setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tchecksum"
+version = "3.1.2"
+description = "CheckSum Calculation Module"
