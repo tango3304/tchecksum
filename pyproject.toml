@@ -6,5 +6,6 @@ build-backend = "hatchling.build"
 name = "tchecksum"
 version = "3.1.2"
 description = "CheckSum Calculation Module"
+license = {file = "LICENSE"}
 readme = "README.md"
 requires-python = ">=2.0"
