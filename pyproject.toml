@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tchecksum"
-version = "1.0.2"
+version = "1.0.3"
 description = "CheckSum Calculation Module"
 license = {file = "LICENSE"}
 readme = "README.md"
