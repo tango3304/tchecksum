@@ -23,7 +23,6 @@ class CheckSum:
 		# Conversion CharacterValue to UnicodeValue [文字をUnicode値]
 		# Add data [dataを追加]
 			data = choices(ascii_letters, k=random_lenght)
-			# data = 'abcdefghijklmnopqrstuvwabcdefghi'
 			data_unicode = [ord(data_char) for data_char in data]
 			checksum_list = self.values_list + data_unicode
 
