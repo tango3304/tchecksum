@@ -40,7 +40,7 @@ class CheckSum:
 			return checksum, data_unicode
 		except KeyboardInterrupt:
 			print(f'\n\nProcess Interrupted [処理を中断しました]')
-			exit()
+			exit(1)
 		except:
 		# Get ErrorMessage [エラーメッセージ取得]
 			exc_type, exc_message, exc_object = exc_info()
@@ -48,4 +48,4 @@ class CheckSum:
 			error_message = ''.join(exc_message for exc_message in exc_list)
 			print_tb(exc_object)
 			print(f'  {error_message}')
-			exit()
+			exit(1)
