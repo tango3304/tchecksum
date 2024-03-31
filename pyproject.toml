@@ -9,3 +9,6 @@ description = "CheckSum Calculation Module"
 license = {file = "LICENSE"}
 readme = "README.md"
 requires-python = ">=2.0"
+
+[tool.hatch.metadata]
+allow-direct-references = true
